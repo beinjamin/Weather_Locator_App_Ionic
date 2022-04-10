@@ -12,8 +12,16 @@
       <ion-card-title>UNIVERSITÉ DOUALA</ion-card-title>
 
     </ion-card-header>
+    <ion-list>
+      <ion-item>Name:{{ contact.name }}</ion-item>
+      <ion-item>Email:{{ contact.email }}</ion-item>
+
+      <ion-item>Tel:{{ contact.tel }}</ion-item>
+
+    </ion-list>
     <ion-card-content>
       <ion-img src="{{ contact.logo }}"></ion-img>
+      <ion-img src="{{ contact.location }}"></ion-img>
     </ion-card-content>
   </ion-card>
 </ion-content>
