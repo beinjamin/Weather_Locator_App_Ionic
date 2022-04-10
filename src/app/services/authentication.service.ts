@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 export class AuthenticationService {
   public authenticated:boolean;
 
+  public token:string;
+
   constructor() { }
 
   public login(username:string, password:string){
@@ -19,6 +21,15 @@ export class AuthenticationService {
 
     }
     return this.authenticated;
+
+    }
+    private saveToken() {
+      this.token="azerty";
+      localStorage.setItem("myToken",this.token);
+    }
+
+    public loadToken() {
+      this.token=localStorage.getItem("my")
 
     }
   }
