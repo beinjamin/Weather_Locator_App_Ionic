@@ -11,7 +11,14 @@ export class AuthenticationService {
   public login(username:string, password:string){
     if(username=='admin' && password=='1234'){
       this.authenticated=true;
+      return this.authenticated;
+    }
+    else{
+      this.authenticated=false;
+
+    }
+    return this.authenticated;
 
     }
   }
-}
+
