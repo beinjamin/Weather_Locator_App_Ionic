@@ -17,6 +17,11 @@ export class LoginPage implements OnInit {
   onLogin(user) {
   let res=this.authService.login(user.username,user.password);
   if(res==true) {
+    this.router.navigateByUrl('menu');
+
+  }
+  else{
+    this.router.navigateByUrl('login');
 
   }
   }
