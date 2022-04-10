@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'meteo',
     loadChildren: () => import('./meteo/meteo.module').then( m => m.MeteoPageModule)
   },
+  {
+    path: 'gallery',
+    loadChildren: () => import('./gallery/gallery.module').then( m => m.GalleryPageModule)
+  },
 ];
 
 @NgModule({
