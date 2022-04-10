@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public contact={
+  name:"Université de douala",
+  email:"uni@gmail.com",
+  tel:"237",
+  logo:"assets/images/logoalmani.jpg",
+  location:"assets/images/loc.png"
+  }
+
   constructor() {}
 
 }
