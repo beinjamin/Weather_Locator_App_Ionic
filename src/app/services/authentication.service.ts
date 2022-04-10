@@ -12,6 +12,7 @@ export class AuthenticationService {
     if(username=='admin' && password=='1234'){
       this.authenticated=true;
       return this.authenticated;
+      this.saveToken();
     }
     else{
       this.authenticated=false;
