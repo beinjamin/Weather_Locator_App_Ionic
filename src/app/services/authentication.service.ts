@@ -29,7 +29,15 @@ export class AuthenticationService {
     }
 
     public loadToken() {
-      this.token=localStorage.getItem("my")
+      this.token=localStorage.getItem("myToken");
+      if(this.token=='azerty'){
+        this.authenticated=true;
+        return true;
+      }
+      else{
+        this.authenticated=false; //
+      }
+      return this.authenticated;
 
     }
   }
