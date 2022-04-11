@@ -30,4 +30,8 @@ export class MenuPage implements OnInit {
   ngOnInit() {
   }
 
+  onMenuItem(m: {title: string;url: string; icon: string}){
+
+  }
+
 }
