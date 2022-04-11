@@ -7,8 +7,9 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-menu-toggle>
-
+  <ion-menu-toggle *ngFor="let m menus">
+    <ion-icon [name]="m.icon"></ion-icon>
+    <ion-
   </ion-menu-toggle>
 </ion-content>
 </ion-menu>
