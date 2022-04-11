@@ -18,6 +18,12 @@ export class AppComponent {
     this.login();
   }
   private login() {
+    let authenticated=this.authService.loadToken();
+    if(authenticated){
+      this.router.navigateByUrl('menu');
+
+    }
+    else
     this.router.navigateByUrl('login')
   }
 }
