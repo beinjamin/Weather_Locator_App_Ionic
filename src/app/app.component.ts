@@ -24,6 +24,6 @@ export class AppComponent {
 
     }
     else
-    this.router.navigateByUrl('login')
+    this.router.navigateByUrl('/login');
   }
 }

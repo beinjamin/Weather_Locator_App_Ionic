@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -25,12 +26,13 @@ export class MenuPage implements OnInit {
 
   ]
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
 
-  onMenuItem(m: {title: string;url: string; icon: string}){
+  onMenuItem(m){
+    this.router.navigateByUrl(m.url);
 
   }
 
