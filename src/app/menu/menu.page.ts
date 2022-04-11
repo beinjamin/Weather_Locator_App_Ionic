@@ -17,10 +17,10 @@ export class MenuPage implements OnInit {
       title:"Gallery" , url:"menu/gallery" ,icon: 'school'
     },
     {
-      title:"Location" , url:"menu/location" ,icon: 'sync'
+      title:"Locations" , url:"menu/locations" ,icon: 'sync'
     },
     {
-      title:"Logout" , url:"/login" ,icon: 'logout'
+      title:"Logout" , url:"/login" ,icon: 'log-out'
     },
 
   ]
